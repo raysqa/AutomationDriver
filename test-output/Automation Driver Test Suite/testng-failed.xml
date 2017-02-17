@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" guice-stage="DEVELOPMENT" name="Failed suite [Automation Driver Test Suite]">
+  <parameter name="testName" value="UnitTestReport"/>
+  <listeners>
+    <listener class-name="raysullivan.operation.AutomationDriverPDFListener"/>
+  </listeners>
+  <test name="Driver Test(failed)">
+    <classes>
+      <class name="raysullivan.unitTest.TestAutomationDriverUtilTest">
+        <methods>
+          <include name="getET"/>
+        </methods>
+      </class> <!-- raysullivan.unitTest.TestAutomationDriverUtilTest -->
+    </classes>
+  </test> <!-- Driver Test(failed) -->
+</suite> <!-- Failed suite [Automation Driver Test Suite] -->

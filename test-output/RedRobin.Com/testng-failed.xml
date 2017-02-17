@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" guice-stage="DEVELOPMENT" name="Failed suite [RedRobin.Com]">
+  <parameter name="testName" value="RedRobinCom"/>
+  <listeners>
+    <listener class-name="raysullivan.operation.AutomationDriverPDFListener"/>
+  </listeners>
+  <test name="RedRobin.Com(failed)">
+    <classes>
+      <class name="raysullivan.driver.RedRobinComDriver">
+        <methods>
+          <include name="afterTest"/>
+          <include name="testDriver" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- raysullivan.driver.RedRobinComDriver -->
+    </classes>
+  </test> <!-- RedRobin.Com(failed) -->
+</suite> <!-- Failed suite [RedRobin.Com] -->
