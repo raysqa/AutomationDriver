@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Driver Test Suite" thread-count = "20">
+    <parameter name="testName" value="UnitTestReport"/>
+    <listeners>
+    	<listener class-name="raysullivan.operation.AutomationDriverPDFListener"/>
+    </listeners>
+  <test verbose="2" name="Driver Test">
+    <classes>
+      <class name="raysullivan.unitTest.TestAutomationDriverOperationAssert"/>
+      <class name="raysullivan.unitTest.TestAutomationDriverUtilTest"/>
+      <class name="raysullivan.unitTest.TestDriverVariable"/>
+      <class name="raysullivan.unitTest.TestGenerateEncryptedString"/>
+      <class name="raysullivan.unitTest.TestUIOperation"/> 
+      <class name="raysullivan.unitTest.TestBCrypt"/>      
+    </classes>
+  </test> <!-- Driver Test -->
+</suite> <!-- Automation Driver Test Suite -->

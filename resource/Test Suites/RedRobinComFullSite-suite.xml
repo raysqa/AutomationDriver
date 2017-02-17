@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RedRobin.com Full Site" thread-count = "20">
+  <parameter name="testName" value="RedRobinComFullSite Test Report"/>
+  <listeners>
+   	<listener class-name="raysullivan.operation.AutomationDriverPDFListener"/>
+  </listeners>
+  <test verbose="2" name="RedRobin.Com Full Site Test">
+    <classes>
+      <class name="raysullivan.driver.RedRobinComDriver"/>
+      <class name="raysullivan.driver.RedRobinRoyaltyDriver"/>
+    </classes>
+  </test> <!-- RedRobin.com Full Site Test -->
+</suite> <!-- RedRobin.com -->

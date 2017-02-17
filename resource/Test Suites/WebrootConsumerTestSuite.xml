@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Webroot Consumer" thread-count = "20">
+    <parameter name="testName" value="WebrootConsumer"/>
+    <listeners>
+    	<listener class-name="raysullivan.operation.AutomationDriverPDFListener"/>
+    </listeners>
+  <test verbose="2" name="Webroot Consumer Test">
+    <classes>
+      <class name="raysullivan.driver.WebrootConsumerDriver"/>
+    </classes>
+  </test> <!-- Webroot Consumer -->
+</suite> <!-- Webroot Consumer -->
